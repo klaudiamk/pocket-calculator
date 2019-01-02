@@ -1,13 +1,30 @@
+body {
+  background-color: mistyrose;
+}
+
 button {
   display: inline-block;
   margin: auto;
   margin-left: 1%;
   margin-right: 1%;
-  height: 3em;
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
 }
 
-{
-  height: "";
-  width: "";
+table.display {
+  height: 50px;
+  width: 100px;
+  border: 2px solid black;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  height: 50px;
+}
+button:hover {
+  background-color: grey;
 }
