@@ -6,3 +6,8 @@ button {
   height: 3em;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
 }
+
+{
+  height: "";
+  width: "";
+}
