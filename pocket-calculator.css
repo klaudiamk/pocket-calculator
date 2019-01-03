@@ -10,6 +10,7 @@ button {
   height: 60px;
   width: 60px;
   border-radius: 4px;
+  text-align: center;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
 }
 
@@ -26,5 +27,14 @@ th {
   height: 50px;
 }
 button:hover {
-  background-color: grey;
+  background-color: whitesmoke;
+}
+.zero {
+  width: 60px;
+}
+.clear, .plus-minus, .percent {
+  background-color: gray;
+}
+.division, .multiplication, .subtraction, .addition, .equals {
+  background-color: salmon;
 }
