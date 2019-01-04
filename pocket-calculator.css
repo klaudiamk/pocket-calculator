@@ -13,28 +13,27 @@ button {
   text-align: center;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
 }
-
-table.display {
-  height: 50px;
-  width: 100px;
-  border: 2px solid black;
-}
 table {
   margin-left: auto;
   margin-right: auto;
 }
 th {
-  height: 50px;
+  height: 60px;
+  border: 3px solid black;
+  padding: 0px 50px;
+  width:150px;
+  border-radius: 4px;
+  font-size: 
 }
 button:hover {
   background-color: whitesmoke;
-}
-.zero {
-  width: 60px;
 }
 .clear, .plus-minus, .percent {
   background-color: gray;
 }
 .division, .multiplication, .subtraction, .addition, .equals {
   background-color: salmon;
+}
+#zero {
+  width: 120px;
 }

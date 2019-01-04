@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="pocket-calculator.css"/>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="js/pocket-calculator.js"></script>
+    <script type="text/javascript" src="pocket-calculator.js"></script>
   </head>
 
   <body>
@@ -18,9 +18,8 @@
     </div>
 
     <table id = "table">
-      <th id = "display">
-        <td>
-        </td>
+      <th colspan="4">
+          <p id = "display"> 0 </p>
     </th>
       <tr>
         <td>  <!-- CLEAR -->
@@ -79,12 +78,10 @@
         <div id="addition"><button onclick = "addition();"  class="addition"> + </button> </div>
       </td>
     </tr>
+    <tfoot>
     <tr>
-        <td>  <!-- EMPTY -->
-          <div id="empty"> <button onclick = "empty();" class = "empty" >  </button> </div>
-        </td>
-        <td>  <!-- ZERO -->
-          <div id="zero"> <button onclick = "zero();" class = "zero"> 0 </button> </div>
+        <td colspan="2">  <!-- ZERO -->
+          <div> <button id = "zero" onclick = "zero();" class = "zero"> 0 </button> </div>
         </td>
         <td>  <!-- DECIMAL -->
           <div class="decimal" id="decimal"> <button onclick = "decimal();"> . </button> </div>
@@ -93,5 +90,6 @@
           <div id="eqauls"> <button onclick = "equals();" class="equals"> = </button> </div>
         </td>
       </tr>
+    </tfoot>
     </table>
   </body>
