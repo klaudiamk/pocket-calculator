@@ -58,26 +58,39 @@ function decimal() {
   p.innerHTML = str;
 }
 function equals() {
-
+  let p = document.getElementById("display");
+  p.innerHTML = eval(p)
 }
 function division() {
-
+  let p = document.getElementById("display");
+  str += "/";
+  p.innerHTML = str;
 }
 function multiplication() {
-
+  let p = document.getElementById("display");
+  str += "*";
+  p.innerHTML = str;
 }
 function subtraction() {
-
+  let p = document.getElementById("display");
+  str += "-";
+  p.innerHTML = str;
 }
 function addition() {
-
+  let p = document.getElementById("display");
+  str += "+";
+  p.innerHTML = str;
 }
 function percent() {
-
+  let p = document.getElementById("display");
+  str += "%";
+  p.innerHTML = str;
 }
 function plusMinus() {
-
+  let p = document.getElementById("display");
+  str += "-";
+  p.innerHTML = str;
 }
 function clear() {
-  
+  txtField.setText("");
 }
