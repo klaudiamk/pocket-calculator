@@ -59,7 +59,7 @@ function decimal() {
 }
 function equals() {
   let p = document.getElementById("display");
-  p.innerHTML = eval(p)
+  p.innerHTML = str;
 }
 function division() {
   let p = document.getElementById("display");
@@ -92,5 +92,25 @@ function plusMinus() {
   p.innerHTML = str;
 }
 function clear() {
-  txtField.setText("");
+  let p = document.getElementById("display");
+  str += "";
+  p.innerHTML = str;
+}
+switch(operator)
+{
+	//add
+	case 0:
+	out.value = num1+num2;
+  	break;
+  	//subtract
+	case 1: out.value = num1-num2;
+	break;
+	//multiply
+	case 2: out.value = num1*num2;
+	break;
+	//divide
+	case 3: out.value = (num1/num2).toFixed(1);//only one digit after decimal place
+	break;
+	default:
+  	break;
 }
