@@ -63,28 +63,28 @@ function equals() {
 }
 function division() {
   let p = document.getElementById("display");
-  str += "/";
+  str += " / ";
   p.innerHTML = str;
 }
 function multiplication() {
   let p = document.getElementById("display");
-  str += "*";
+  str += " * ";
   p.innerHTML = str;
 }
 function subtraction() {
   let p = document.getElementById("display");
-  str += "-";
+  str += " - ";
   p.innerHTML = str;
 }
 function addition() {
   let p = document.getElementById("display");
-  str += "+";
+  str += " + ";
   p.innerHTML = str;
 }
 
 function percent() {
   let p = document.getElementById("display");
-  str += "%";
+  str += " % ";
   p.innerHTML = str;
 }
 
