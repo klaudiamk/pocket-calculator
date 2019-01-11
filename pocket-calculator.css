@@ -2,7 +2,7 @@ body {
   background-color: mistyrose;
 }
 
-button {
+input [type = button] {
   display: inline-block;
   margin: auto;
   margin-left: 1%;
@@ -17,7 +17,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-th {
+input [type = button] {
   height: 60px;
   border: 0px solid black;
   padding: 0px 50px;
