@@ -18,36 +18,36 @@
     </div>
 
     <table id = "table">
-      <th colspan="4"><input type="text" placeholder = "0" id = "display"></th>
+      <th colspan="4"><p id = "display"></p></th>
         <tr>
-          <td><input type = "button" value = "AC" onclick = "clr()"/></th> <!--CLEAR-->
-          <td><input type = "button" value = "+/-" onclick = "dis('-')"/></td> <!--NEGATION-->
-          <td><input type = "button" value = "%" onclick = "dis('%')"/></td> <!--PERCENTAGE-->
-          <td><input type = "button" value = "/" onclick = "dis('/')"/></td> <!--DIVISION-->
+          <td><button onclick = "clear();" class = "clear"> AC </button></td> <!--CLEAR-->
+          <td><button onclick = "negation();" class = "negation"> +/- </button></td> <!--NEGATION-->
+          <td><button onclick = "percentage();" class = "percentage"> % </button></td> <!--PERCENTAGE-->
+          <td><button onclick = "division();" class = "division"> / </button></td> <!--DIVISION-->
         </tr>
         <tr>
-          <td><input type = "button" value = "7" onclick = "dis('7')"/></td>
-          <td><input type = "button" value = "8" onclick = "dis('8')"/></td>
-          <td><input type = "button" value = "9" onclick = "dis('9')"/></td>
-          <td><input type = "button" value = "*" onclick = "dis('*')"/></td>
+          <td><button onclick = "seven();"> 7 </button></td>
+          <td><button onclick = "eight();"> 8 </button></td>
+          <td><button onclick = "nine();"> 9 </button></td>
+          <td><button onclick = "multiplication();" class = "multiplication"> * </button></td>
         </tr>
         <tr>
-          <td><input type = "button" value = "4" onclick = "dis('4')"/></td>
-          <td><input type = "button" value = "5" onclick = "dis('5')"/></td>
-          <td><input type = "button" value = "6" onclick = "dis('6')"/></td>
-          <td><input type = "button" value = "-" onclick = "dis('-')"/></td>
+          <td><button onclick = "four();"> 4 </button></td>
+          <td><button onclick = "five();"> 5 </button></td>
+          <td><button onclick = "six();"> 6 </button></td>
+          <td><button onclick = "subtraction();" class = "subtraction"> - </button></td>
         </tr>
         <tr>
-          <td><input type = "button" value = "1" onclick = "dis('1')"/></td>
-          <td><input type = "button" value = "2" onclick = "dis('2')"/></td>
-          <td><input type = "button" value = "3" onclick = "dis('3')"/></td>
-          <td><input type = "button" value = "+" onclick = "dis('+')"/></td>
+          <td><button onclick = "one();"> 1 </button></td>
+          <td><button onclick = "two();"> 2 </button></td>
+          <td><button onclick = "three();"> 3 </button></td>
+          <td><button onclick = "addition();" class = "subtraction"> + </button></td>
         </tr>
     <tfoot>
         <tr>
-          <td colspan="2"><input type = "button" value = "0" onlick = "dis('0')" class = "zero" id = "zero"/></td>
-          <td><input type = "button" value = "." onclick = "dis('.')"/></td>
-          <td><input type = "button" value = "=" onclick = "dis('=')"/></td>
+          <td colspan = "2"> <button onclick = "zero();" id = "zero"> 0 </button></td>
+          <td><button onclick = "decimal();"> . </button></td>
+          <td><button onclick = "equals();" class = "equals"> = </button></td>
         </tr>
     </tfoot>
   </table>
