@@ -12,6 +12,9 @@ button {
   border-radius: 4px;
   text-align: center;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 3px;
+
 }
 table {
   margin-left: auto;
@@ -19,7 +22,6 @@ table {
 }
 #display {
   height: 90px;
-  border: 0px solid black;
   padding: 0px 50px;
   min-width: 150px;
   max-width: 150px;

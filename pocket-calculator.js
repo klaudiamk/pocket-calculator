@@ -62,3 +62,52 @@ function subtraction() {
   str += "-";
   p.innerHTML = str;
 }
+function multiplication() {
+  let p = document.getElementById("display");
+  str += "*";
+  p.innerHTML = str;
+}
+function division() {
+  let p = document.getElementById("display");
+  str += "/";
+  p.innerHTML = str;
+}
+function percentage() {
+  let p = document.getElementById("display");
+  str += "%";
+  p.innerHTML = str;
+}
+function negation() {
+  let p = document.getElementById("display");
+  str += "-";
+  p.innerHTML = str;
+}
+function decimal() {
+  let p = document.getElementById("display");
+  str += ".";
+  p.innerHTML = str;
+}
+function equals() {
+  let p = document.getElementById("display");
+  str += "=";
+  p.innerHTML = str;
+
+  switch (operations) {
+      case "addition":
+          // do something
+          break;
+      case "subtraction":
+          // do something
+          break;
+      case "multiplication":
+          // do something
+          break;
+      case "division":
+          // do something
+          break;
+      default:
+          //error
+          break;
+  }
+
+}
