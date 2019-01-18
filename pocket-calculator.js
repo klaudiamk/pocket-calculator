@@ -1,6 +1,8 @@
-let p = document.getElementById("display");
+// let p = document.getElementById("display");
 let str = "";
-p.innerHTML = 0;
+//let str2 = "";
+let val = 0;
+// p.innerHTML = 0;
 
 function one() {
   let p = document.getElementById("display");
@@ -54,33 +56,35 @@ function zero() {
 }
 function addition() {
   let p = document.getElementById("display");
-  str += "+";
+  str += " + ";
   p.innerHTML = str;
 }
 function subtraction() {
   let p = document.getElementById("display");
-  str += "-";
+  str += " - ";
   p.innerHTML = str;
 }
 function multiplication() {
   let p = document.getElementById("display");
-  str += "*";
+  str += " * ";
   p.innerHTML = str;
 }
 function division() {
   let p = document.getElementById("display");
-  str += "/";
+  str += " / ";
   p.innerHTML = str;
 }
 function percentage() {
   let p = document.getElementById("display");
-  str += "%";
+  str += " % ";
   p.innerHTML = str;
+//  val = val / 100;
 }
 function negation() {
   let p = document.getElementById("display");
   str += "-";
   p.innerHTML = str;
+  val = 0 - val;
 }
 function decimal() {
   let p = document.getElementById("display");
@@ -89,25 +93,17 @@ function decimal() {
 }
 function equals() {
   let p = document.getElementById("display");
-  str += "=";
   p.innerHTML = str;
 
-  switch (operations) {
-      case "addition":
-          // do something
-          break;
-      case "subtraction":
-          // do something
-          break;
-      case "multiplication":
-          // do something
-          break;
-      case "division":
-          // do something
-          break;
-      default:
-          //error
-          break;
-  }
+var result = eval(str);
+p.innerHTML = result;
 
+if (result > 999999999) {
+  var exponent = result.toExponential();
+  document.getElementById("display");
+  p.innerHTML = exponent;
 }
+}
+//fuction clear() {
+//  let p = document.getElementById("display");
+//}
