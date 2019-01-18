@@ -1,6 +1,6 @@
 // let p = document.getElementById("display");
 let str = "";
-//let str2 = "";
+let str2 = "";
 let val = 0;
 // p.innerHTML = 0;
 
@@ -56,39 +56,39 @@ function zero() {
 }
 function addition() {
   let p = document.getElementById("display");
-  str += " + ";
+  str2 += " + ";
   p.innerHTML = str;
 }
 function subtraction() {
   let p = document.getElementById("display");
-  str += " - ";
+  str2 += " - ";
   p.innerHTML = str;
 }
 function multiplication() {
   let p = document.getElementById("display");
-  str += " * ";
+  str2 += " * ";
   p.innerHTML = str;
 }
 function division() {
   let p = document.getElementById("display");
-  str += " / ";
+  str2 += " / ";
   p.innerHTML = str;
 }
 function percentage() {
   let p = document.getElementById("display");
-  str += " % ";
+  str2 += " % ";
   p.innerHTML = str;
 //  val = val / 100;
 }
 function negation() {
   let p = document.getElementById("display");
-  str += "-";
+  str2 += "-";
   p.innerHTML = str;
   val = 0 - val;
 }
 function decimal() {
   let p = document.getElementById("display");
-  str += ".";
+  str2 += ".";
   p.innerHTML = str;
 }
 function equals() {
@@ -103,7 +103,15 @@ if (result > 999999999) {
   document.getElementById("display");
   p.innerHTML = exponent;
 }
+
+if (str > 999999999) {
+  //ASK someone for help!
 }
-//fuction clear() {
-//  let p = document.getElementById("display");
-//}
+
+
+}
+function clear() {
+  let p = document.getElementById("display");
+  p.innerHTML = "";
+  //doesn;t work
+}
