@@ -126,6 +126,7 @@ function negation() {
 function decimal() {
   let p = document.getElementById("display");
   str2 += ".";
+  if (str.length > 2) str = str.substring(0,2); //doesn't show number before decimal point; only zero
   p.innerHTML = str;
 }
 function equals() {
@@ -141,8 +142,6 @@ if (result > 999999999 || result.length > 10) {
   document.getElementById("display");
   p.innerHTML = exponent;
 }
-
-
 }
 
 function AC() {
@@ -151,5 +150,4 @@ function AC() {
   str2 = "";
   c = 1;
   p.innerHTML = "0";
-  //doesn;t work
 }
