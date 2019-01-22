@@ -3,6 +3,7 @@ let str = "";
 let val = 0;
 let str2 = "";
 let c = 1;
+let decimalClicked = 0;
 // p.innerHTML = 0;
 
 function one() {
@@ -125,8 +126,11 @@ function negation() {
 }
 function decimal() {
   let p = document.getElementById("display");
-  str2 += ".";
-  if (str.length > 2) str = str.substring(0,2); //doesn't show number before decimal point; only zero
+  if (decimalClicked == 0) {
+    str += ".";
+    decimalClicked++;
+   }
+  //if (str.length > 2) str = str.substring(0,2); //doesn't show number before decimal point; only zero
   p.innerHTML = str;
 }
 function equals() {
@@ -141,6 +145,10 @@ if (result > 999999999 || result.length > 10) {
   var exponent = result.toPrecision(5);
   document.getElementById("display");
   p.innerHTML = exponent;
+}
+
+if (!isFinite(result)) {
+  p.innerHTML = "Error";
 }
 }
 
